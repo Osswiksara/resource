@@ -1,0 +1,766 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style type="text/css">
+    .demo
+{
+    padding: 100px 0;
+}
+.heading-title
+{
+    margin-bottom: 100px;
+}
+.our-team{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .pic:before{
+    content: "";
+    background: #716a9e;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.78;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .pic:before{
+    transform: scale(1);
+}
+
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+
+.our-team .social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .social{
+    opacity: 1;
+}
+
+.our-team .social li{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li:nth-child(1){
+    transform: translate3d(22px, -19px, 0px);
+}
+
+.our-team:hover .social li:nth-child(1){
+    transform: translate3d(62px, -19px, 0px);
+}
+
+.our-team .social li:nth-child(2){
+    transform: translate3d(36px, 38px, 0px);
+}
+
+.our-team:hover .social li:nth-child(2){
+    transform: translate3d(36px, 8px, 0px);
+}
+
+.our-team .social li:nth-child(3){
+    transform: translate3d(-18px, -75px, 0px);
+}
+
+.our-team:hover .social li:nth-child(3){
+    transform: translate3d(-18px, -46px, 0px);
+}
+
+.our-team .social li:nth-child(4){
+    transform: translate3d(-5px, -19px, 0px);
+}
+
+.our-team:hover .social li:nth-child(4){
+    transform: translate3d(-43px, -19px, 0px);
+}
+
+.our-team .social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #333;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 15px 0 0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li a:hover{
+    line-height: 35px;
+    background: #fff;
+    color: #333;
+    transform: rotate(-45deg);
+}
+
+.our-team .social li a i{
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .social li a:hover i{
+    transform: rotate(45deg);
+}
+
+.our-team .team-content{
+    padding: 15px 10px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+
+.our-team small{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.our-team .team-layer{
+    width: 100%;
+    padding: 34px 10px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #716a9e;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team:hover .team-layer{
+    bottom: 0;
+    opacity: 1;
+}
+
+.our-team .team-layer a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .team-layer a:hover{
+    color: #716a9e;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 35px; }
+}@charset "utf-8";
+</style>
+<title> Struktur Organisasi OSIS  </title>
+</head>
+
+<body>
+ <div class="demo">
+        <div class="container">
+            <div class="row text-center">
+                <h1> Struktur Organisasi Osis </h1>
+                <hr>
+                <h2>SMK Wikrama 1 Jepara</h2>
+            </div>
+            <br>
+            <br>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/hiskia.anggi"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/hiskianggi"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:hiskia.anggi@my.gavilan.edu"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://blogs.zone.id"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Hiskia A. P. Pratama</h3>
+                            <small class="post">Ketua OSIS</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Hiskia A. P. Pratama</a>
+                            <span class="post">Ketua OSIS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Zolanliska Safitri</h3>
+                            <small class="post">Wakil Ketua OSIS I</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Zolanliska Safitri</a>
+                            <span class="post">Wakil Ketua OSIS I</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Kiki Viola Sutra</h3>
+                            <small class="post">Wakil Ketua OSIS II</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Kiki Viola Sutra</a>
+                            <span class="post">Wakil Ketua OSIS II</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Firdausia Lailatul A.</h3>
+                            <small class="post">Sekretaris</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Firdausia Lailatul A.</a>
+                            <span class="post">Sekretaris</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Wiwik Wahyuningsih</h3>
+                            <small class="post">Wakil Sekretaris I</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Wiwik Wahyuningsih</a>
+                            <span class="post">Wakil Sekretaris I</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Aminuddin Shofi Ashari</h3>
+                            <small class="post">Wakil Sekretaris II</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Aminuddin Shofi Ashari</a>
+                            <span class="post">Wakil Sekretaris II</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Fera Rohmana</h3>
+                            <small class="post">Bendahara</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Fera Rohmana</a>
+                            <span class="post">Bendahara</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Alfina Nur Rohmah</h3>
+                            <small class="post">Wakil Bendahara</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Alfina Nur Rohmah</a>
+                            <span class="post">Wakil Bendahara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Muhammad Kamaluddin</h3>
+                            <small class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Muhammad Kamaluddin</a>
+                            <span class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Iis Sugiyanti</h3>
+                            <small class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Iis Sugiyanti</a>
+                            <span class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Tegar Miftaqur Rohim</h3>
+                            <small class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Tegar Miftaqur Rohim</a>
+                            <span class="post">SEKBID I (Ketaqwaan Terhadap Tuhan YME)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dwi Elvia Novita Sari</h3>
+                            <small class="post">SEKBID II (Kepribadian dan Budi Pekerti Luhur)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Dwi Elvia Novita Sari</a>
+                            <span class="post">SEKBID II (Kepribadian dan Budi Pekerti Luhur)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Virra Ayu Hendrawati</h3>
+                            <small class="post">SEKBID II (Kepribadian dan Budi Pekerti Luhur)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Virra Ayu Hendrawati</a>
+                            <span class="post">SEKBID II (Kepribadian dan Budi Pekerti Luhur)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Adelia Vista Maharani</h3>
+                            <small class="post">SEKBID III (Komunikasi Bahasa Inggris)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Adelia Vista Maharani</a>
+                            <span class="post">SEKBID III (Komunikasi Bahasa Inggris)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Fika Nur Maulidah</h3>
+                            <small class="post">SEKBID III (Komunikasi Bahasa Inggris)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Fika Nur Maulidah</a>
+                            <span class="post">SEKBID III (Komunikasi Bahasa Inggris)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Intansyah Nor Aini</h3>
+                            <small class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Intansyah Nor Aini</a>
+                            <span class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Nurul Fatikhah</h3>
+                            <small class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Nurul Fatikhah</a>
+                            <span class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Nor Hidayatul Ulfa</h3>
+                            <small class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Nor Hidayatul Ulfa</a>
+                            <span class="post">SEKBID IV (Bela Negara)<br><a style="visibility: hidden;">SMK Wikrama 1 Jepara</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Hana Tri Mahardika</h3>
+                            <small class="post">SEKBID V (Keterampilan dan Kewirausahaan)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Hana Tri Mahardika</a>
+                            <span class="post">SEKBID V (Keterampilan dan Kewirausahaan)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Fitria Novianti</h3>
+                            <small class="post">SEKBID V (Keterampilan dan Kewirausahaan)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Fitria Novianti</a>
+                            <span class="post">SEKBID V (Keterampilan dan Kewirausahaan)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+                        <p>
+                <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Aik Angger Bagaskara</h3>
+                            <small class="post">SEKBID VI (Kesegaran Jasmani dan Daya Kreasi)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Aik Angger Bagaskara</a>
+                            <span class="post">SEKBID VI (Kesegaran Jasmani dan Daya Kreasi)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Amelisa Evita Sari</h3>
+                            <small class="post">SEKBID VI (Kesegaran Jasmani dan Daya Kreasi)</small>
+                        </div>
+                        <div class="team-layer">
+                            <a>Amelisa Evita Sari</a>
+                            <span class="post">SEKBID VI (Kesegaran Jasmani dan Daya Kreasi)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Inggrid L. Quintaniar</h3>
+                            <small class="post">SEKBID VII (Teknologi Informasi dan Komunikasi)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Inggrid L. Quintaniar</a>
+                            <span class="post">SEKBID VII (Teknologi Informasi dan Komunikasi)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/Ai.jpg" alt=""/>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="mailto:"><i class="fa fa-inbox"></i></a></li>
+                                <li><a href="https://"><i class="fa fa-pencil"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Anis Safitri</h3>
+                            <small class="post">SEKBID VII (Teknologi Informasi dan Komunikasi)</small>
+
+                        </div>
+                        <div class="team-layer">
+                            <a>Anis Safitri</a>
+                            <span class="post">SEKBID VII (Teknologi Informasi dan Komunikasi)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
