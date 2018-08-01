@@ -1,1 +1,1 @@
-# resource
+# resource of official website osswiksara
